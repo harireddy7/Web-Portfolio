@@ -348,6 +348,7 @@ img {
     'name'
     'email'
     'message'
+    'recaptcha'
     'submit-btn';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
@@ -364,7 +365,10 @@ img {
 }
 #contact-a .text-fields .message-input {
   grid-area: message;
-  /* height: 100px; */
+  height: 70px;
+}
+#contact-a .text-fields .recaptcha {
+  grid-area: recaptcha;
 }
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
