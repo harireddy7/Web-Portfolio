@@ -1,0 +1,132 @@
+/* checkbox hide */
+#ham-menu .toggler {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* burger menu container */
+#ham-menu .hamburger {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Burger Menu lines */
+#ham-menu .hamburger > div {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#ham-menu .hamburger > div::before,
+#ham-menu .hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+#ham-menu .hamburger > div::after {
+  top: 10px;
+}
+
+/* toggle burger to cross */
+#ham-menu .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+#ham-menu .toggler:checked + .hamburger > div::before,
+#ham-menu .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+/* rotate cross on hover */
+#ham-menu .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* menu container */
+#ham-menu .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: -1;
+}
+
+/* menu overlay 1st div */
+#ham-menu .menu > div {
+  background: rgba(17, 0, 34, 0.95);
+  width: 300vw;
+  height: 500vh;
+  border-radius: 50%;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.35s ease-in-out;
+}
+
+/* menu opacity on overlay 2nd div */
+#ham-menu .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* list items */
+#ham-menu .menu li {
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+/* menu items */
+#ham-menu .menu li a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#ham-menu .menu li a:hover {
+  color: #93cb62;
+}
+
+/* on checked show menu */
+#ham-menu .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+#ham-menu .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.35s;
+}
+
+#ham-menu .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}

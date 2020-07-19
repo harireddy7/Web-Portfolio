@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+		integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+		crossorigin="anonymous" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./css/menu.css" />
+	<title>Hari Kotha | UI Developer</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="container">
+			<nav id="main-nav">
+				<a href="index.html">
+					<h1 class="logo">
+						<span class="main-text"><i class="fas fa-code"></i> Hari</span><span class="light-text">Kotha</span>
+					</h1>
+				</a>
+				<ul class="main-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="./assets/Hari-Kotha-Resume.pdf" target="blank">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div id="ham-menu">
+					<input type="checkbox" name="menu" id="menu" class="toggler">
+					<div class="hamburger">
+						<div></div>
+					</div>
+					<div class="menu">
+						<div>
+							<div>
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#work">Work</a></li>
+									<li><a href="./assets/Hari-Kotha-Resume.pdf" target="blank">Resume</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Showcase -->
+	<section class="showcase" id="showcase">
+		<div class="showcase-content">
+			<h1>
+				I am <span class="main-text">Hari</span>, <br /><span class="main-text">Front-End</span> Developer
+				<span class="txt-type" data-wait="3000" data-words='["Photographer","Designer", "UI/UX Dev"]'></span>
+			</h1>
+			<p class="lead">I Specialize in <span class="font-bold">responsive UI</span> development</p>
+			<a href="#work" class="btn-styled">View My Work</a>
+		</div>
+	</section>
+
+	<!-- Section A: Info -->
+	<section id="about" class="text-center py-2">
+		<div class="container">
+			<div class="section-title">About Me</div>
+			<div class="bottom-line"></div>
+			<p class="lead">Let me tell you a little about myself and what i do</p>
+			<div class="about-info">
+				<img src="./img/about.jpg" alt="my-bio" class="bio-img">
+				<div class="bio bg-light">
+					<h4>Your Project Is In Safe Hands</h4>
+					<p class="bio-info">
+						I am a passionate Front-End Developer. Started building simple websites using HTML and CSS back in 2016.
+						I am a Javascript enthusiast and passionate about building for responsive UI websites & providing dynamic
+						user experiences.
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Cards -->
+	<section id="skills" class="text-center py-2 bg-light">
+		<!-- <div class="container"> -->
+		<div class="section-title">Skills</div>
+		<div class="bottom-line"></div>
+		<div class="skills">
+			<div class="skill-category">
+				<p class="lead text-center">Worked on</p>
+				<div id="featured-skills">
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/html-5.png" alt="html5" />
+						<p class="skill-title">HTML 5</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/css3.png" alt="css3" />
+						<p class="skill-title">CSS 3</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/javascript.png" alt="javascript" />
+						<p class="skill-title">Javascript</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/officexs/75/000000/react.png" alt="react" />
+						<p class="skill-title">React.js</p>
+					</div>
+				</div>
+			</div>
+			<div class="skill-category"></div>
+			<div class="skill-category">
+				<p class="lead text-center">Familiar with</p>
+				<div id="familiar-skills">
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/sass.png" alt="sass" />
+						<p class="skill-title">Sass</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/nodejs.png" alt="nodejs" />
+						<p class="skill-title">Node.js</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/color/80/000000/mongodb.png" alt="mongodb" />
+						<p class="skill-title">Mongo DB</p>
+					</div>
+					<div class="skill">
+						<img src="https://img.icons8.com/cute-clipart/80/000000/react-native.png" alt="React-Native" />
+						<p class="skill-title">React Native</p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<section id="download-resume" class="py-2 text-center section-title">
+		<button class="btn btn-styled" id="download-resume-btn">
+			<a href="./assets/Hari-Kotha-Resume.pdf" target="blank">Download Resume</a>
+		</button>
+	</section>
+
+	<!-- Section A: Work Gallery -->
+	<section id="work" class="py-2 text-center">
+		<div class="container">
+			<h2 class="section-title">My Work</h2>
+			<div class="bottom-line"></div>
+			<p class="lead">Check out some of my projects</p>
+			<div class="items">
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item1.png" alt="project1">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Design</p>
+							<h2 class="item-text-title">Great Gradients</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item2.png" alt="project2">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">UI/UX</p>
+							<h2 class="item-text-title">World Experience</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item3.png" alt="project3">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Photography & Design</p>
+							<h2 class="item-text-title">Vanishing</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item4.png" alt="project4">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Design</p>
+							<h2 class="item-text-title">Gap INC</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item5.png" alt="project5">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Mobile UI Design</p>
+							<h2 class="item-text-title">Face The Experience</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item6.png" alt="project6">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Design Concept</p>
+							<h2 class="item-text-title">Bezier Curves</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item7.png" alt="project7">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Photography</p>
+							<h2 class="item-text-title">Dock ponder</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item8.png" alt="project8">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Web Applications</p>
+							<h2 class="item-text-title">Restaurant App</h2>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="./img/items/item9.png" alt="project9">
+					</div>
+					<div class="item-text">
+						<div class="item-text-wrap">
+							<p class="item-text-category">Social Network Concept</p>
+							<h2 class="item-text-title">FriendFeed</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Section B: Contact Info -->
+	<section id="contact">
+		<h2 class="section-title">Get in Touch</h2>
+		<div class="bottom-line"></div>
+		<p class="lead text-center">Social Platforms</p>
+		<div class="contact-info bg-light">
+			<div>
+				<a href="https://linkedin.com/in/harikotha13" target="blank">
+					<img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin" />
+				</a>
+				<h3 class="social-tag">LinkedIn</h3>
+			</div>
+			<div>
+				<a href="https://github.com/harireddy7" target="blank">
+					<img src="https://img.icons8.com/fluent/96/000000/github.png" alt="GitHub" />
+				</a>
+				<h3 class="social-tag">GitHub</h3>
+			</div>
+			<div>
+				<a href="https://twitter.com/harikotha13" target="blank">
+					<img src="https://img.icons8.com/fluent/96/000000/twitter.png"" alt=" twitter" />
+				</a>
+				<h3 class="social-tag">Twitter</h3>
+			</div>
+			<div>
+				<a href="https://instagram.com/harikotha13" target="blank">
+					<img src="https://img.icons8.com/color/96/000000/instagram.png" alt="instagram" />
+				</a>
+				<h3 class="social-tag">Instagram</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section A: Contact Form -->
+	<section id="contact-a" class="text-center py-2">
+		<div class="container">
+			<p class="lead text-center">Have any queries? Ping me</p>
+			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+				<div class="text-fields">
+					<div class="name-input">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" class="text-input" placeholder="Name">
+					</div>
+					<div class="email-input">
+						<label for="email">Email Address</label>
+						<input id="email" name="email" type="text" class="text-input" placeholder="Email Address">
+					</div>
+					<div class="message-input">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" class="text-input" placeholder="Enter Message"></textarea>
+					</div>
+					<div class="my-2 mx-auto">
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+					<button type="submit" class="btn-dark">Send</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer id="main-footer">
+		<div class="footer-content container">
+			<p>Copyright &copy; 2019. All Right Reserved</p>
+			<div class="social">
+				<div>
+					<a href="https://linkedin.com/in/harikotha13" target="blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/harireddy7" target="blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://twitter.com/harikotha13" target="blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://instagram.com/harikotha13" target="blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
