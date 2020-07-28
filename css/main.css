@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --header-height: 5rem;
-  scroll-padding-top: var(--header-height);
-  scroll-behavior: smooth;
-}
-
 html,
 body {
   font-family: 'Dosis', sans-serif;
@@ -18,6 +12,8 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -105,6 +101,10 @@ input[class^='btn-']:hover {
   padding: 2rem 0;
 }
 
+.ml-2 {
+  margin-left: 2rem;
+}
+
 .my-2 {
   margin: 2rem 0;
 }
@@ -147,11 +147,37 @@ img {
   width: 100%;
 }
 
+#scrollTop {
+  width: 40px;
+  height: 40px;
+  background: #93cb62;
+  color: #102;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 5;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Header */
 #header {
   background: #102;
   color: #fff;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 10;
@@ -190,13 +216,14 @@ img {
 /* Hide Hamburger Menu on larger screens */
 #header #ham-menu {
   display: none;
+  user-select: none;
 }
 
 /* Showcase */
 .showcase {
   width: 100%;
   background: url('../assets/showcase.jpg') no-repeat center right/cover;
-  height: calc(100vh + 1rem);
+  height: calc(100vh - 3rem);
   color: #fff;
   text-align: center;
 }
@@ -209,9 +236,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-.showcase h1 {
+.showcase-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+.showcase-content p.lead {
+  margin: 0;
+}
+.showcase .showcase-content #work-resume-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* About */
@@ -223,7 +259,8 @@ img {
 
 #about .bio {
   grid-area: bio;
-  border-left: 3px solid #93cb62;
+  max-width: 500px;
+  border: 3px solid #93cb62;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -231,9 +268,9 @@ img {
   grid-area: bio-img;
   border-radius: 5px;
 }
-#about .bio-info {
+/* #about .bio-info {
   padding-top: 3rem;
-}
+} */
 
 /* Skills */
 .skills,
@@ -255,7 +292,8 @@ img {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  grid-gap: 1rem;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .item {
@@ -263,6 +301,9 @@ img {
   background: #93cb62;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 10px;
+  /* border: 2px solid #93cb62; */
+  border: 1px solid #93cb62;
 }
 .item:after {
   content: '';
@@ -473,6 +514,9 @@ img {
   #header #main-nav {
     flex-direction: column;
   }
+  .showcase {
+    height: calc(100vh - 7rem);
+  }
   .showcase h1 {
     font-size: 3rem;
   }
@@ -503,10 +547,12 @@ img {
   .container {
     padding: 0 0.5rem;
   }
-
   #header {
     height: 4rem;
     width: 100%;
+  }
+  .showcase {
+    height: calc(100vh - 4rem);
   }
   /* Show Hamburger & Hide Main Menu */
   #header #main-nav {
@@ -522,6 +568,26 @@ img {
   }
   #header #ham-menu {
     display: block;
+  }
+
+  .showcase .showcase-content p.lead {
+    margin-bottom: 0;
+  }
+  .showcase .showcase-content #work-resume-links {
+    flex-direction: column;
+  }
+
+  .showcase .showcase-content #view-work {
+    padding-bottom: 1rem;
+  }
+
+  .showcase .showcase-content #download-resume {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about p.lead {
+    margin-bottom: 0;
   }
 
   .items {
@@ -549,7 +615,17 @@ img {
 }
 
 @media (max-width: 400px) {
-  .showcase h1 {
+  .showcase-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-height: 400px) {
+  html,
+  body {
+    scroll-padding-top: 7rem;
+  }
+  .showcase .showcase-content h1 {
     font-size: 2rem;
   }
 }

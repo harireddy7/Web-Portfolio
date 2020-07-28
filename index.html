@@ -61,11 +61,25 @@
 		<div class="showcase-content">
 			<h1>
 				I am <span class="main-text">Hari</span>, <br /><span class="main-text">Front-End</span> Developer
-				<span class="txt-type" data-wait="3000" data-words='["Photographer","Designer", "UI/UX Dev"]'></span>
 			</h1>
 			<p class="lead">I Specialize in <span class="font-bold">responsive UI</span> development</p>
-			<a href="#work" class="btn-styled">View My Work</a>
+			<div id="work-resume-links">
+				<section id="view-work" class="py-2 text-center">
+					<button class="btn btn-styled">
+						<a href="#work">View My Work</a>
+					</button>
+				</section>
+				<section id="download-resume" class="ml-2 py-2 text-center">
+					<button class="btn btn-styled">
+						<a href="./assets/Hari-Kotha-Resume.pdf" target="blank">Download Resume</a>
+					</button>
+				</section>
+			</div>
 		</div>
+	</section>
+
+	<section id="scrollTop">
+		<i class="fas fa-caret-up fa-2x"></i>
 	</section>
 
 	<!-- Section A: Info -->
@@ -75,9 +89,9 @@
 			<div class="bottom-line"></div>
 			<p class="lead">Let me tell you a little about myself and what i do</p>
 			<div class="about-info">
-				<img src="./assets/bio-img.jpg" alt="my-bio" class="bio-img">
+				<!-- <img src="./assets/bio-img.jpg" alt="my-bio" class="bio-img"> -->
 				<div class="bio bg-light">
-					<h4>Your Project Is In Safe Hands</h4>
+					<!-- <h4>Your Project Is In Safe Hands</h4> -->
 					<p class="bio-info">
 						I am a passionate Front-End Developer. Started building simple websites using HTML and CSS back in 2016.
 						I am a Javascript enthusiast and passionate about building for responsive UI websites & providing dynamic
@@ -90,7 +104,7 @@
 	</section>
 
 	<!-- Skills Cards -->
-	<section id="skills" class="text-center py-2 bg-light">
+	<section id="skills" class="text-center py-1 bg-light">
 		<!-- <div class="container"> -->
 		<div class="section-title">Skills</div>
 		<div class="bottom-line"></div>
@@ -142,12 +156,6 @@
 		</div>
 	</section>
 
-	<section id="download-resume" class="py-2 text-center section-title">
-		<button class="btn btn-styled" id="download-resume-btn">
-			<a href="./assets/Hari-Kotha-Resume.pdf" target="blank">Download Resume</a>
-		</button>
-	</section>
-
 	<!-- Section A: Work Gallery -->
 	<section id="work" class="py-2 text-center">
 		<div class="container">
@@ -182,13 +190,26 @@
 					</a>
 				</div>
 				<div class="item">
+					<a href="https://weatherjs-dev.netlify.app/" target="_blank">
+						<div class="item-image">
+							<img src="assets/weatherjs.png" alt="weatherjs">
+						</div>
+						<div class="item-text">
+							<div class="item-text-wrap">
+								<p class="item-text-category">Bootstrap & Js</p>
+								<h2 class="item-text-title">WeatherJs</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item">
 					<a href="https://harireddy7.github.io/Animated-Counter/" target="_blank">
 						<div class="item-image">
 							<img src="assets/AnimatedCounter.JPG" alt="AnimatedCounter">
 						</div>
 						<div class="item-text">
 							<div class="item-text-wrap">
-								<p class="item-text-category">HTML, CSS & Js</p>
+								<p class="item-text-category">Javascript</p>
 								<h2 class="item-text-title">AnimatedCounter</h2>
 							</div>
 						</div>
@@ -199,9 +220,8 @@
 		</div>
 	</section>
 
-
 	<!-- Section B: Contact Info -->
-	<section id="contact">
+	<section id="contact" class="py-2">
 		<h2 class="section-title">Get in Touch</h2>
 		<div class="bottom-line"></div>
 		<p class="lead text-center">Social Platforms</p>
@@ -234,7 +254,7 @@
 	</section>
 
 	<!-- Section A: Contact Form -->
-	<section id="contact-a" class="text-center py-2">
+	<section id="contact-a" class="text-center">
 		<div class="container">
 			<p class="lead text-center">Have any queries? Ping me</p>
 			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
@@ -290,6 +310,7 @@
 		</div>
 	</footer>
 
+	<script src="./app.js"></script>
 </body>
 
 </html>
