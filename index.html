@@ -5,6 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<meta name="title" property="og:title" content="Hari Kotha | Portfolio">
+	<meta name="image" property="og:image" content="<%= require('./assets/preview.png') %>">
+	<meta name="description" property="og:description"
+		content="I am a passionate Front-End Developer. Started building simple websites using HTML and CSS back in 2016. Javascript enthusiast and passionate about building for responsive UI websites & providing dynamic user experiences.">
+	<meta name="author" content="Hari Kotha">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
 		integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
 		crossorigin="anonymous" />
@@ -89,12 +95,27 @@
 			<div class="bottom-line"></div>
 			<p class="lead">Let me tell you a little about myself and what i do</p>
 			<div class="about-info">
-				<!-- <img src="./assets/bio-img.jpg" alt="my-bio" class="bio-img"> -->
+				<div class=bio-profile>
+					<div class="bio-profile-row-1">
+						<img src="./assets/bio-img-1.jpg" id="bio-profile-logo">
+						<div class="bio-name">Hari Kotha</div>
+					</div>
+					<div class="bio-profile-row-2">
+						<p class="bio-desc">UI Developer at Mphasis Limited</p>
+						<p class="bio-interests">React.js & Node.js</p>
+					</div>
+					<div class="bio-profile-row-3">
+						<button class="btn btn-profile">
+							<a href="https://www.linkedin.com/in/harikotha13/" target="blank">View Profile</a>
+						</button>
+						<img src="./assets/linkedIn-badge.png" alt="linkedIn Badge" id="linkedIn-badge">
+					</div>
+				</div>
 				<div class="bio bg-light">
 					<!-- <h4>Your Project Is In Safe Hands</h4> -->
 					<p class="bio-info">
 						I am a passionate Front-End Developer. Started building simple websites using HTML and CSS back in 2016.
-						I am a Javascript enthusiast and passionate about building for responsive UI websites & providing dynamic
+						Javascript enthusiast and passionate about building for responsive UI websites & providing dynamic
 						user experiences.
 					</p>
 
