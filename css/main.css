@@ -34,8 +34,9 @@ body {
   cursor: pointer;
 }
 
-.main-text {
-  color: #93cb62;
+.main-text,
+.active {
+  color: #93cb62 !important;
 }
 
 .font-bold {
